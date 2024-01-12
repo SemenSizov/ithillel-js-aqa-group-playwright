@@ -1,0 +1,24 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["eslint:recommended", "prettier"],
+	"overrides": [
+		{
+			"env": {
+				"node": true
+			},
+			"files": [".eslintrs"],
+			"parserOptions": {
+				"sourceType": "script"
+			}
+		}
+	],
+	"parserOptions": {
+		"ecmaVersion": "latest"
+	},
+	"rules": {}
+}
+
