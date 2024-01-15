@@ -1,17 +1,20 @@
 {
-  "name": "ithillel-js-aqa-group-playwright",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@playwright/test": "^1.40.1",
-    "@types/node": "^20.11.0",
-    "eslint": "^8.56.0",
-    "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.1.1"
-  }
+	"name": "ithillel-js-aqa-group-playwright",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "npx playwright test --project=lecture19 --headed"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@playwright/test": "^1.40.1",
+		"@types/node": "^20.11.0",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"prettier": "^3.1.1"
+	}
 }
+

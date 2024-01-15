@@ -61,6 +61,10 @@ module.exports = defineConfig({
 			use: { ...devices['Desktop Chrome'] },
 			dependencies: ['smoke setup'],
 		},
+		{
+			name: 'lecture19',
+			testDir: './tests/lecture19',
+		},
 
 		// {
 		// 	name: 'firefox',
@@ -100,4 +104,3 @@ module.exports = defineConfig({
 	//   reuseExistingServer: !process.env.CI,
 	// },
 });
-
