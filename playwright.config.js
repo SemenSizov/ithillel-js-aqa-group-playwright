@@ -65,7 +65,15 @@ module.exports = defineConfig({
 			name: 'lecture19',
 			testDir: './tests/lecture19',
 		},
-
+		{
+			name: 'lecture20',
+			testDir: './tests/lecture20',
+			use: {
+				launchOptions: {
+					slowMo: 300,
+				},
+			},
+		},
 		// {
 		// 	name: 'firefox',
 		// 	use: { ...devices['Desktop Firefox'] },
