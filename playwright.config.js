@@ -1,17 +1,20 @@
 // @ts-check
 const { defineConfig, devices } = require('@playwright/test');
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// require('dotenv').config();
+// if (process.env.NODE_ENV === 'stage') {
+// 	require('dotenv').config({ path: './env/.env.stage' });
+// } else if (process.env.NODE_ENV === 'qa') {
+// 	require('dotenv').config({ path: './env/.env.qa' });
+// } else if (process.env.NODE_ENV === 'dev') {
+// 	require('dotenv').config({ path: './env/.env.dev' });
+// }
+require('dotenv').config({ path: './env/.env.qa' });
 
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-	testDir: './tests',
+	testDir: './tests/lecture20',
 	testMatch: '*.spec.js',
 	testIgnore: '*skip.spec.js',
 	globalSetup: 'global.setup.js',
@@ -25,14 +28,21 @@ module.exports = defineConfig({
 	retries: process.env.CI ? 2 : 0,
 	/* Opt out of parallel tests on CI. */
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
-	reporter: 'html',
+	reporter: [
+		[
+			'@testomatio/reporter/lib/adapter/playwright.js',
+			{
+				apiKey: process.env.TESTOMATIO,
+			},
+		],
+	],
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		/* Base URL to use in actions like `await page.goto('/')`. */
-		baseURL: 'https://qauto.forstudy.space/',
+		baseURL: process.env.HOST,
 		httpCredentials: {
-			username: 'guest',
-			password: 'welcome2qauto',
+			username: process.env.USER_NAME || '',
+			password: process.env.USER_PASS || '',
 		},
 		/* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
 		trace: 'on',
@@ -47,43 +57,47 @@ module.exports = defineConfig({
 	/* Configure projects for major browsers */
 	projects: [
 		{
-			name: 'smoke setup',
-			testMatch: 'smoke-setup.js',
-		},
-		{
-			name: 'regression',
-			use: {},
-		},
-		{
-			name: 'smoke',
-			testMatch: '*.smoke.spec.js',
-			retries: 0,
-			use: { ...devices['Desktop Chrome'] },
-			dependencies: ['smoke setup'],
-		},
-		{
-			name: 'lecture19',
-			testDir: './tests/lecture19',
-		},
-		{
-			name: 'lecture20',
-			testDir: './tests/lecture20',
+			name: 'chrome',
 			use: {
-				launchOptions: {
-					slowMo: 300,
-				},
+				browserName: 'chromium',
 			},
 		},
+		// {
+		// 	name: 'smoke setup',
+		// 	testMatch: 'smoke-setup.js',
+		// },
+		// {
+		// 	name: 'regression',
+		// 	use: {},
+		// },
+		// {
+		// 	name: 'smoke',
+		// 	testMatch: '*.smoke.spec.js',
+		// 	retries: 0,
+		// 	use: { ...devices['Desktop Chrome'] },
+		// 	dependencies: ['smoke setup'],
+		// },
+		// {
+		// 	name: 'lecture19',
+		// 	testDir: './tests/lecture19',
+		// },
+		// {
+		// 	name: 'lecture20',
+		// 	testDir: './tests/lecture20',
+		// 	use: {
+		// 		launchOptions: {
+		// 			slowMo: 300,
+		// 		},
+		// 	},
+		// },
 		// {
 		// 	name: 'firefox',
 		// 	use: { ...devices['Desktop Firefox'] },
 		// },
-
 		// {
 		// 	name: 'webkit',
 		// 	use: { ...devices['Desktop Safari'] },
 		// },
-
 		/* Test against mobile viewports. */
 		// {
 		//   name: 'Mobile Chrome',
@@ -93,7 +107,6 @@ module.exports = defineConfig({
 		//   name: 'Mobile Safari',
 		//   use: { ...devices['iPhone 12'] },
 		// },
-
 		/* Test against branded browsers. */
 		// {
 		//   name: 'Microsoft Edge',
