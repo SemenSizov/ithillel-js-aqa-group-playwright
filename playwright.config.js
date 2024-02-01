@@ -10,11 +10,32 @@ const { defineConfig, devices } = require('@playwright/test');
 // }
 require('dotenv').config({ path: './env/.env.qa' });
 
+// function getReporters() {
+// 	const reporters = 'list';
+// 	return reporters;
+// 	if (process.env.CI) {
+// 		reporters.push(['dot']);
+// 	} else {
+// 		// reporters.push([
+// 		// 	'monocart-reporter',
+// 		// 	{
+// 		// 		name: 'My Test Report',
+// 		// 		outputFile: './test-results/report.html',
+// 		// 	},
+// 		// ]);
+// 		reporters.push(['html', { outputDir: './test-results/html' }]);
+// 		if (process.env.NODE_ENV === 'qa') {
+// 			reporters.push(['list']);
+// 		}
+// 	}
+// 	return reporters;
+// }
+
 /**
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-	testDir: './tests/lecture20',
+	testDir: './tests/lecture21',
 	testMatch: '*.spec.js',
 	testIgnore: '*skip.spec.js',
 	globalSetup: 'global.setup.js',
@@ -28,14 +49,8 @@ module.exports = defineConfig({
 	retries: process.env.CI ? 2 : 0,
 	/* Opt out of parallel tests on CI. */
 	/* Reporter to use. See https://playwright.dev/docs/test-reporters */
-	reporter: [
-		[
-			'@testomatio/reporter/lib/adapter/playwright.js',
-			{
-				apiKey: process.env.TESTOMATIO,
-			},
-		],
-	],
+	reporter: 'html',
+
 	/* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
 	use: {
 		/* Base URL to use in actions like `await page.goto('/')`. */
@@ -45,7 +60,8 @@ module.exports = defineConfig({
 			password: process.env.USER_PASS || '',
 		},
 		/* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-		trace: 'on',
+		trace: 'retain-on-failure',
+		screenshot: 'only-on-failure',
 		actionTimeout: 5_000,
 		navigationTimeout: 15_000,
 		browserName: 'chromium',
@@ -81,15 +97,10 @@ module.exports = defineConfig({
 		// 	name: 'lecture19',
 		// 	testDir: './tests/lecture19',
 		// },
-		// {
-		// 	name: 'lecture20',
-		// 	testDir: './tests/lecture20',
-		// 	use: {
-		// 		launchOptions: {
-		// 			slowMo: 300,
-		// 		},
-		// 	},
-		// },
+		{
+			name: 'lecture22',
+			testDir: './tests/lecture22',
+		},
 		// {
 		// 	name: 'firefox',
 		// 	use: { ...devices['Desktop Firefox'] },

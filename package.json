@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "npx playwright test --project=lecture20 --headed",
+		"test": "npx playwright test --project=lecture22 --headed",
 		"test:stage": "cross-env NODE_ENV=stage npx playwright test",
 		"test:qa": "cross-env NODE_ENV=qa npx playwright test"
 	},
@@ -18,6 +18,7 @@
 		"cross-env": "^7.0.3",
 		"eslint": "^8.56.0",
 		"eslint-config-prettier": "^9.1.0",
+		"monocart-reporter": "^2.3.0",
 		"prettier": "^3.1.1"
 	},
 	"dependencies": {

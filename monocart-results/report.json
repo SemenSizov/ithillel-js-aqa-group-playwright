@@ -1,0 +1,765 @@
+{
+    "name": "Monocart",
+    "date": 1706550888290,
+    "dateH": "1/29/2024, 7:54:48 PM",
+    "duration": 19704,
+    "durationH": "19.7s",
+    "cwd": "D:/ithilel/ithillel-js-aqa-group-playwright",
+    "outputFile": "D:\\ithilel\\ithillel-js-aqa-group-playwright\\monocart-results\\report.html",
+    "outputDir": "D:\\ithilel\\ithillel-js-aqa-group-playwright\\monocart-results",
+    "metadata": {
+        "actualWorkers": 1
+    },
+    "system": {
+        "cpu": {
+            "color": "#117DBB",
+            "count": 8,
+            "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+            "speed": 2808
+        },
+        "mem": {
+            "color": "#8B12AE",
+            "total": 17018695680
+        },
+        "arch": "x64",
+        "platform": "win32",
+        "release": "10.0.19045",
+        "type": "Windows_NT",
+        "version": "Windows 10 Pro",
+        "uptime": 379031.75,
+        "hostname": "TX-N-0246",
+        "pid": 11880,
+        "node": "20.11.0",
+        "v8": "11.3.244.8-node.17",
+        "timestampStart": 1706550888290,
+        "ticks": [
+            {
+                "cpu": {
+                    "percent": 89.95
+                },
+                "mem": {
+                    "free": 6613843968
+                },
+                "timestamp": 1706550890304
+            },
+            {
+                "cpu": {
+                    "percent": 61.17
+                },
+                "mem": {
+                    "free": 6332547072
+                },
+                "timestamp": 1706550892305
+            },
+            {
+                "cpu": {
+                    "percent": 49.9
+                },
+                "mem": {
+                    "free": 6252617728
+                },
+                "timestamp": 1706550894339
+            },
+            {
+                "cpu": {
+                    "percent": 57.05
+                },
+                "mem": {
+                    "free": 6252212224
+                },
+                "timestamp": 1706550896341
+            },
+            {
+                "cpu": {
+                    "percent": 73.71
+                },
+                "mem": {
+                    "free": 6505308160
+                },
+                "timestamp": 1706550898368
+            },
+            {
+                "cpu": {
+                    "percent": 92.47
+                },
+                "mem": {
+                    "free": 6425915392
+                },
+                "timestamp": 1706550900371
+            },
+            {
+                "cpu": {
+                    "percent": 48.64
+                },
+                "mem": {
+                    "free": 6430834688
+                },
+                "timestamp": 1706550902373
+            },
+            {
+                "cpu": {
+                    "percent": 45.85
+                },
+                "mem": {
+                    "free": 6435844096
+                },
+                "timestamp": 1706550904379
+            },
+            {
+                "cpu": {
+                    "percent": 81.71
+                },
+                "mem": {
+                    "free": 6484856832
+                },
+                "timestamp": 1706550906387
+            },
+            {
+                "cpu": {
+                    "percent": 35.52
+                },
+                "mem": {
+                    "free": 6919041024
+                },
+                "timestamp": 1706550907980
+            }
+        ],
+        "workers": 4,
+        "jobs": [
+            {
+                "caseId": "ed971ae4db37624299d1",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1706550889229,
+                "duration": 7766
+            },
+            {
+                "caseId": "ef23b4735de13f63b6cf",
+                "parallelIndex": 0,
+                "workerIndex": 0,
+                "timestamp": 1706550896997,
+                "duration": 9885
+            }
+        ],
+        "cwd": "D:/ithilel/ithillel-js-aqa-group-playwright",
+        "configFile": "playwright.config.js",
+        "playwright": "1.40.1",
+        "monocart": "2.3.0",
+        "testDir": "tests/lecture20",
+        "outputFile": "monocart-results/report.html",
+        "outputDir": "monocart-results",
+        "timestampEnd": 1706550907994
+    },
+    "artifacts": [],
+    "trends": [],
+    "columns": [
+        {
+            "id": "caseType",
+            "name": "",
+            "width": 36,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconCaseType",
+            "detailed": false
+        },
+        {
+            "id": "title",
+            "name": "Title",
+            "searchable": true,
+            "width": 350,
+            "maxWidth": 1230,
+            "detailed": false
+        },
+        {
+            "id": "type",
+            "name": "Type",
+            "width": 50,
+            "sortable": false,
+            "align": "center",
+            "formatter": "iconType",
+            "detailed": false
+        },
+        {
+            "id": "duration",
+            "name": "Duration",
+            "align": "right",
+            "sortAsc": false,
+            "formatter": "duration",
+            "detailed": false
+        },
+        {
+            "id": "errors",
+            "name": "Errors",
+            "width": 60,
+            "align": "center",
+            "comparer": "errors",
+            "formatter": "errors",
+            "detailed": false
+        },
+        {
+            "id": "logs",
+            "name": "Logs",
+            "width": 60,
+            "align": "center",
+            "comparer": "logs",
+            "formatter": "logs",
+            "detailed": false
+        },
+        {
+            "id": "annotations",
+            "name": "Annotations",
+            "width": 100,
+            "markdown": true,
+            "searchable": true,
+            "comparer": "annotations",
+            "formatter": "annotations",
+            "detailed": false
+        },
+        {
+            "id": "attachments",
+            "name": "Attachments",
+            "width": 100,
+            "align": "center",
+            "formatter": "attachments",
+            "detailed": false
+        },
+        {
+            "id": "status",
+            "name": "Status",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "expectedStatus",
+            "name": "Expected",
+            "align": "center",
+            "detailed": false
+        },
+        {
+            "id": "outcome",
+            "name": "Outcome",
+            "align": "center",
+            "width": 85,
+            "detailed": false
+        },
+        {
+            "id": "retry",
+            "name": "Retry",
+            "align": "center",
+            "width": 50,
+            "detailed": false
+        },
+        {
+            "id": "location",
+            "name": "Location",
+            "classMap": "mcr-location",
+            "width": 200,
+            "maxWidth": 1981,
+            "detailed": false
+        }
+    ],
+    "rows": [
+        {
+            "id": "nh035i826mpdypb31f21",
+            "title": "lecture22",
+            "type": "suite",
+            "suiteType": "project",
+            "caseNum": 2,
+            "subs": [
+                {
+                    "id": "5a3e5722b4f41a0e2880",
+                    "title": "../lecture22/loginFormValidation.spec.js",
+                    "type": "suite",
+                    "suiteType": "file",
+                    "caseNum": 2,
+                    "subs": [
+                        {
+                            "id": "5a3e5722b4f41a0e2880",
+                            "title": "Login Form Validation",
+                            "type": "suite",
+                            "suiteType": "describe",
+                            "caseNum": 2,
+                            "subs": [
+                                {
+                                    "id": "ed971ae4db37624299d1",
+                                    "title": "should diplay an error message when submitting an empty email",
+                                    "type": "case",
+                                    "caseType": "passed",
+                                    "ok": true,
+                                    "outcome": "expected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/lecture22/loginFormValidation.spec.js:9:2",
+                                    "timestamps": [
+                                        1706550889229,
+                                        1706550896995
+                                    ],
+                                    "duration": 7766,
+                                    "timeout": 30000,
+                                    "retry": 0,
+                                    "status": "passed",
+                                    "stepNum": 16,
+                                    "stepFailed": 0,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "1wjcw06xnehlhpy4z6hj",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 6758,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "fvvrgnjyw00x1kk9dsym",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 6751,
+                                                    "location": "tests/lecture22/loginFormValidation.spec.js:5:7",
+                                                    "subs": [
+                                                        {
+                                                            "id": "i7yoqbw05bvtdep2qohw",
+                                                            "title": "fixture: browser",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 880,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "ccrc5q4wcvkk6orjgqrx",
+                                                                    "title": "browserType.launch",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 868,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "5e6nisxebmv6uq5vv364",
+                                                            "title": "fixture: context",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 83,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "77alxrhu3ys2komwtxbs",
+                                                                    "title": "browser.newContext",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 57,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "vb5d2nff14p4uyt3lbtb",
+                                                            "title": "fixture: page",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 694,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "bk0dmri6jpolsm30cb35",
+                                                                    "title": "browserContext.newPage",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 689,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "iogdbkxw6l6v0trvha3u",
+                                                            "title": "page.goto(/)",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 5046,
+                                                            "location": "tests/lecture22/loginFormValidation.spec.js:6:14"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "n88dhkg8qzy4yc2lziae",
+                                            "title": "locator.click(header >> .header_signin)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 293,
+                                            "location": "src/pages/WelcomePage.js:13:31"
+                                        },
+                                        {
+                                            "id": "37c3xlvwyml63na7usel",
+                                            "title": "locator.focus(app-signin-modal >> #signinEmail)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 77,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:12:30"
+                                        },
+                                        {
+                                            "id": "fxkz0zr06cvyxytd1ukw",
+                                            "title": "locator.blur(app-signin-modal >> #signinEmail)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 61,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:13:30"
+                                        },
+                                        {
+                                            "id": "crdby56uonr9g9rk6umt",
+                                            "title": "expect.toHaveText",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 53,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:14:36"
+                                        },
+                                        {
+                                            "id": "x9risdg7qohojpdeh6km",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 498,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "gtabwoji6asyvi4m8eza",
+                                                    "title": "fixture: page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 5,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "ampn8t64fkqazmpt6wzx",
+                                                    "title": "fixture: context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "id": "ef23b4735de13f63b6cf",
+                                    "title": "should display an error message when submitting an invalid email",
+                                    "type": "case",
+                                    "caseType": "failed",
+                                    "ok": false,
+                                    "outcome": "unexpected",
+                                    "expectedStatus": "passed",
+                                    "location": "tests/lecture22/loginFormValidation.spec.js:17:2",
+                                    "timestamps": [
+                                        1706550896997,
+                                        1706550906882
+                                    ],
+                                    "duration": 9885,
+                                    "timeout": 30000,
+                                    "retry": 0,
+                                    "status": "failed",
+                                    "stepNum": 17,
+                                    "stepFailed": 1,
+                                    "stepSubs": true,
+                                    "subs": [
+                                        {
+                                            "id": "hp2b47ro3gj1mdzvkm8y",
+                                            "title": "Before Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 2875,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "p880a1txegr5e0ut7r7d",
+                                                    "title": "beforeEach hook",
+                                                    "type": "step",
+                                                    "stepType": "hook",
+                                                    "duration": 2872,
+                                                    "location": "tests/lecture22/loginFormValidation.spec.js:5:7",
+                                                    "subs": [
+                                                        {
+                                                            "id": "hh1dsxb25kcw5mexakr4",
+                                                            "title": "fixture: context",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 68,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "eiutdyo1ueilxp44s468",
+                                                                    "title": "browser.newContext",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 46,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "fqleyh9fyxqlg61htzva",
+                                                            "title": "fixture: page",
+                                                            "type": "step",
+                                                            "stepType": "fixture",
+                                                            "duration": 527,
+                                                            "location": "",
+                                                            "subs": [
+                                                                {
+                                                                    "id": "ye0owem5m5zxv8xmh23s",
+                                                                    "title": "browserContext.newPage",
+                                                                    "type": "step",
+                                                                    "stepType": "pw:api",
+                                                                    "duration": 521,
+                                                                    "location": ""
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "id": "8jgee357px1bok57fytk",
+                                                            "title": "page.goto(/)",
+                                                            "type": "step",
+                                                            "stepType": "pw:api",
+                                                            "duration": 2181,
+                                                            "location": "tests/lecture22/loginFormValidation.spec.js:6:14"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "id": "bhy55u7jo558uzs2raio",
+                                            "title": "locator.click(header >> .header_signin)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 260,
+                                            "location": "src/pages/WelcomePage.js:13:31"
+                                        },
+                                        {
+                                            "id": "if5nd4f66i1zyoqrknak",
+                                            "title": "locator.fill(app-signin-modal >> #signinEmail)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 120,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:20:30"
+                                        },
+                                        {
+                                            "id": "qbljsqdyy0gapqk7j3ha",
+                                            "title": "locator.blur(app-signin-modal >> #signinEmail)",
+                                            "type": "step",
+                                            "stepType": "pw:api",
+                                            "duration": 69,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:21:30"
+                                        },
+                                        {
+                                            "id": "tis80dqfij9702ukkj44",
+                                            "title": "expect.toHaveText",
+                                            "type": "step",
+                                            "stepType": "expect",
+                                            "duration": 5042,
+                                            "location": "tests/lecture22/loginFormValidation.spec.js:22:36",
+                                            "errors": [
+                                                "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nLocator: locator('app-signin-modal').locator('.invalid-feedback')\nExpected string: \u001b[32m\"Email is incorrect\u001b[7m2\u001b[27m\"\u001b[39m\nReceived string: \u001b[31m\"Email is incorrect\"\u001b[39m\nCall log:\n  \u001b[2m- expect.toHaveText with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('app-signin-modal').locator('.invalid-feedback')\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\u001b[2m  -   locator resolved to <div _ngcontent-rul-c51=\"\" class=\"invalid-feedback\">…</div>\u001b[22m\n\u001b[2m  -   unexpected value \"Email is incorrect\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 20 |\u001b[39m \t\t\u001b[36mawait\u001b[39m loginForm\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mfill(\u001b[32m'qwerty'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 |\u001b[39m \t\t\u001b[36mawait\u001b[39m loginForm\u001b[33m.\u001b[39memailInput\u001b[33m.\u001b[39mblur()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 22 |\u001b[39m \t\t\u001b[36mawait\u001b[39m expect(loginForm\u001b[33m.\u001b[39merrorMsg)\u001b[33m.\u001b[39mtoHaveText(\u001b[32m'Email is incorrect2'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m \t\t                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\n    at D:\\ithilel\\ithillel-js-aqa-group-playwright\\tests\\lecture22\\loginFormValidation.spec.js:22:36"
+                                            ],
+                                            "errorNum": 1
+                                        },
+                                        {
+                                            "id": "q7jlpgcs5i48y3g6flcg",
+                                            "title": "After Hooks",
+                                            "type": "step",
+                                            "stepType": "hook",
+                                            "duration": 1505,
+                                            "location": "",
+                                            "subs": [
+                                                {
+                                                    "id": "jco14beiuqbz1zo5024k",
+                                                    "title": "page.screenshot",
+                                                    "type": "step",
+                                                    "stepType": "pw:api",
+                                                    "duration": 203,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "hdpfin3ae0plu4e5o7zd",
+                                                    "title": "attach \"screenshot\"",
+                                                    "type": "step",
+                                                    "stepType": "attach",
+                                                    "duration": 3,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "3s77cbewqc613mcddmg1",
+                                                    "title": "fixture: page",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 2,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "zgqyu884tb309lg8h9sv",
+                                                    "title": "fixture: context",
+                                                    "type": "step",
+                                                    "stepType": "fixture",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                },
+                                                {
+                                                    "id": "filjxc6sohlyt7dv0wwl",
+                                                    "title": "attach \"trace\"",
+                                                    "type": "step",
+                                                    "stepType": "attach",
+                                                    "duration": 1,
+                                                    "location": ""
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "attachments": [
+                                        {
+                                            "name": "screenshot",
+                                            "path": "../test-results/loginFormValidation-Login-Form-Validation-shou-e1e00--error-message-when-submitting-an-invalid-email-lecture22/test-failed-1.png",
+                                            "contentType": "image/png",
+                                            "retry": 0
+                                        },
+                                        {
+                                            "name": "trace",
+                                            "path": "../test-results/loginFormValidation-Login-Form-Validation-shou-e1e00--error-message-when-submitting-an-invalid-email-lecture22/trace.zip",
+                                            "contentType": "application/zip",
+                                            "retry": 0
+                                        }
+                                    ],
+                                    "errorNum": 1,
+                                    "errorId": "tis80dqfij9702ukkj44"
+                                }
+                            ],
+                            "location": "tests/lecture22/loginFormValidation.spec.js:4:6"
+                        }
+                    ],
+                    "location": "tests/lecture22/loginFormValidation.spec.js:0:0"
+                }
+            ]
+        }
+    ],
+    "formatters": {},
+    "suiteTypes": [
+        "project",
+        "file",
+        "describe",
+        "shard"
+    ],
+    "caseTypes": [
+        "passed",
+        "flaky",
+        "skipped",
+        "failed"
+    ],
+    "traceViewerUrl": "https://trace.playwright.dev/?trace={traceUrl}",
+    "mermaid": null,
+    "tags": {},
+    "summary": {
+        "tests": {
+            "name": "Tests",
+            "value": 2,
+            "nav": true,
+            "id": "tests"
+        },
+        "passed": {
+            "name": "Passed",
+            "value": 1,
+            "color": "green",
+            "nav": true,
+            "id": "passed",
+            "percent": "50.0%"
+        },
+        "flaky": {
+            "name": "Flaky",
+            "value": 0,
+            "color": "orange",
+            "nav": true,
+            "id": "flaky",
+            "percent": "0.0%"
+        },
+        "skipped": {
+            "name": "Skipped",
+            "value": 0,
+            "color": "gray",
+            "nav": true,
+            "id": "skipped",
+            "percent": "0.0%"
+        },
+        "failed": {
+            "name": "Failed",
+            "value": 1,
+            "color": "#d00",
+            "nav": true,
+            "id": "failed",
+            "percent": "50.0%"
+        },
+        "steps": {
+            "name": "Steps",
+            "value": 33,
+            "id": "steps"
+        },
+        "suites": {
+            "name": "Suites",
+            "value": 1,
+            "id": "suites"
+        },
+        "projects": {
+            "name": "Projects",
+            "description": "Suite type is project",
+            "value": 1,
+            "id": "projects"
+        },
+        "files": {
+            "name": "Files",
+            "description": "Suite type is file",
+            "value": 1,
+            "id": "files"
+        },
+        "describes": {
+            "name": "Describes",
+            "description": "Suite type is describe",
+            "value": 1,
+            "id": "describes"
+        },
+        "shards": {
+            "name": "Shards",
+            "description": "Suite type is shard (only in shading mode)",
+            "value": 0,
+            "id": "shards"
+        },
+        "retries": {
+            "name": "Retries",
+            "value": 0,
+            "id": "retries"
+        },
+        "errors": {
+            "name": "Errors",
+            "value": 1,
+            "id": "errors"
+        },
+        "logs": {
+            "name": "Logs",
+            "value": 0,
+            "id": "logs"
+        },
+        "attachments": {
+            "name": "Attachments",
+            "value": 2,
+            "id": "attachments"
+        },
+        "artifacts": {
+            "name": "Artifacts",
+            "value": 0
+        }
+    },
+    "pieChart": {
+        "ns": "mcr-pie",
+        "width": 360,
+        "height": 150,
+        "margin": 10,
+        "svg": "<svg viewBox=\"0 0 360 150\" width=\"100%\" height=\"100%\" xmlns=\"http://www.w3.org/2000/svg\"><g class=\"mcr-pie-path-passed\"><path d=\"M75,75 L75,10 A65,65 0 1 1 75,140 z\" fill=\"green\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"10,0\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-flaky\"><path d=\"\" fill=\"orange\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-skipped\"><path d=\"\" fill=\"gray\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"0,10\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g class=\"mcr-pie-path-failed\"><path d=\"M75,75 L75,140 A65,65 0 1 1 75,10 z\" fill=\"#d00\" opacity=\"0.8\" /><animateTransform from=\"0,0\" to=\"0,0\" pos=\"-10,0\" attributeName=\"transform\" type=\"translate\" dur=\"0.2s\" fill=\"freeze\" repeatCount=\"1\" restart=\"always\" /></g><g transform=\"translate(160 10)\"><g class=\"mcr-pie-legend-passed\" transform=\"translate(0 0)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"green\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Passed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">50.0%</text></g><g class=\"mcr-pie-legend-flaky\" transform=\"translate(0 32)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"orange\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Flaky</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-skipped\" transform=\"translate(0 64)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"gray\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Skipped</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">0</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">0.0%</text></g><g class=\"mcr-pie-legend-failed\" transform=\"translate(0 96)\"><circle cx=\"10\" cy=\"16\" r=\"10\" fill=\"#d00\" opacity=\"0.8\" /><text x=\"30\" y=\"16\" alignment-baseline=\"middle\">Failed</text><text x=\"115\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"middle\">1</text><text x=\"190\" y=\"16\" alignment-baseline=\"middle\" text-anchor=\"end\">50.0%</text></g></g></svg>"
+    }
+}
