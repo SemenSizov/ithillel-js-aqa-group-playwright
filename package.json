@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "npx playwright test --project=lecture22 --headed",
+		"test": "npx playwright test --project=lecture23 --headed",
 		"test:stage": "cross-env NODE_ENV=stage npx playwright test",
 		"test:qa": "cross-env NODE_ENV=qa npx playwright test"
 	},
@@ -25,3 +25,4 @@
 		"dotenv": "^16.4.1"
 	}
 }
+
