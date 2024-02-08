@@ -1,11 +1,10 @@
 const { expect } = require('@playwright/test');
 const { test } = require('../../src/fixture/pageFixtures');
-import GaragePage from '../../src/pages/garagePage/GaragePage';
-import WelocomePage from '../../src/pages/welcomePage/WelcomePage';
+const { WelocomePage } = require('../../src/pages/welcomePage/WelcomePage.js');
 
 test.describe('Guest', () => {
-	test('should be able to add a car', async ({ guestPage }) => {
-		const welocomePage = new WelocomePage(guestPage);
+	test('should be able to add a car', async ({ page }) => {
+		const welocomePage = new WelocomePage(page);
 		await welocomePage.navigate();
 		const garagePage = await welocomePage.loginAsGuest();
 		const addCarPopup = await garagePage.openAddCarPopup();

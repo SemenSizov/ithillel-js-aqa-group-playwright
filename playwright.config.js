@@ -67,5 +67,10 @@ module.exports = defineConfig({
 			testDir: './tests/lecture23',
 			dependencies: ['login'],
 		},
+		{
+			name: 'lecture24',
+			testDir: './tests/lecture24',
+			dependencies: ['login'],
+		},
 	],
 });

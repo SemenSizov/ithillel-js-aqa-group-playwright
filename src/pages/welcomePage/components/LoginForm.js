@@ -1,7 +1,7 @@
-import BaseComponent from '../../../components/BaseComponent';
-import GaragePage from '../../garagePage/GaragePage';
+const { BaseComponent } = require('../../../components/BaseComponent');
+const { GaragePage } = require('../../garagePage/GaragePage');
 
-export default class LoginForm extends BaseComponent {
+class LoginForm extends BaseComponent {
 	constructor(page) {
 		super(page, 'app-signin-modal');
 		this.emailInput = this._container.locator('#signinEmail');
@@ -21,3 +21,5 @@ export default class LoginForm extends BaseComponent {
 		await this.passwordInput.fill(password);
 	}
 }
+
+module.exports = { LoginForm };

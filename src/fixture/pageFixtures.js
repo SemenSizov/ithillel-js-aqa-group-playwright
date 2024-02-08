@@ -8,12 +8,12 @@ const test = base.test.extend({
 		const page = await context.newPage();
 		await use(page);
 	},
-	guestPage: async ({}, use) => {
-		const chrome = await chromium.launch({ headless: false });
-		const context = await chrome.newContext({ storageState: 'guest-garage.json' });
-		const page = await context.newPage();
-		await use(page);
-	},
+	// guestPage: async ({}, use) => {
+	// 	const chrome = await chromium.launch({ headless: false });
+	// 	const context = await chrome.newContext({ storageState: 'guest-garage.json' });
+	// 	const page = await context.newPage();
+	// 	await use(page);
+	// },
 });
 
 const extendedTest = test.extend({

@@ -1,6 +1,6 @@
 const { expect } = require('@playwright/test');
 const { test } = require('../../src/fixture/pageFixtures');
-import GaragePage from '../../src/pages/garagePage/GaragePage';
+const { GaragePage } = require('../../src/pages/garagePage/GaragePage');
 
 test.describe('User', () => {
 	test('should be able to add a car', async ({ userPage }) => {

@@ -1,6 +1,6 @@
-import BaseComponent from '../../../components/BaseComponent';
+const { BaseComponent } = require('../../../components/BaseComponent');
 
-export class CarList extends BaseComponent {
+class CarList extends BaseComponent {
 	constructor(page) {
 		super(page, '.car-list');
 		this.carItem = this._container.locator('.car-item');
@@ -14,3 +14,5 @@ export class CarList extends BaseComponent {
 		return this.carItem.nth(index);
 	}
 }
+
+module.exports = { CarList };

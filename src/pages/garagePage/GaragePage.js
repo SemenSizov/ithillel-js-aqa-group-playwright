@@ -1,8 +1,8 @@
-import BasePage from '../BasePage';
-import { AddCarPopup } from './components/AddCarPopup';
-import { CarList } from './components/CarList';
+const { BasePage } = require('../BasePage');
+const { AddCarPopup } = require('./components/AddCarPopup');
+const { CarList } = require('./components/CarList');
 
-export default class GaragePage extends BasePage {
+class GaragePage extends BasePage {
 	constructor(page) {
 		super(page, '/panel/garage');
 		this.addCarBtn = this._page.getByRole('button', { name: 'Add car' });
@@ -15,3 +15,5 @@ export default class GaragePage extends BasePage {
 		return this.addCarPopup;
 	}
 }
+
+module.exports = { GaragePage };

@@ -1,9 +1,9 @@
-import Header from '../../components/Header';
-import LoginForm from './components/LoginForm';
-import BasePage from '../BasePage';
-import GaragePage from '../garagePage/GaragePage';
+const { Header } = require('../../components/Header');
+const { LoginForm } = require('./components/LoginForm');
+const { BasePage } = require('../BasePage');
+const { GaragePage } = require('../garagePage/GaragePage');
 
-export default class WelcomePage extends BasePage {
+class WelcomePage extends BasePage {
 	constructor(page) {
 		super(page, '/', '.socials');
 		this.header = new Header(this._page);
@@ -20,3 +20,5 @@ export default class WelcomePage extends BasePage {
 		return new GaragePage(this._page);
 	}
 }
+
+module.exports = { WelcomePage };

@@ -1,7 +1,7 @@
-import { expect, test } from '@playwright/test';
-import BaseComponent from '../../../components/BaseComponent';
+const { expect, test } = require('@playwright/test');
+const { BaseComponent } = require('../../../components/BaseComponent');
 
-export class AddCarPopup extends BaseComponent {
+class AddCarPopup extends BaseComponent {
 	constructor(page) {
 		super(page, 'app-add-car-modal');
 		this._brandSelect = this._container.locator('#addCarBrand');
@@ -29,3 +29,5 @@ export class AddCarPopup extends BaseComponent {
 		await expect(this.errorMsg).toHaveText(error);
 	}
 }
+
+module.exports = { AddCarPopup };

@@ -1,5 +1,5 @@
 const { test } = require('@playwright/test');
-const { default: WelcomePage } = require('../../src/pages/welcomePage/WelcomePage');
+const { default: WelcomePage } = require('../../src/pages/welcomePage/WelcomePage.js');
 
 test.describe('Storage state', () => {
 	test.skip('can be saved', async ({ page }) => {

@@ -1,6 +1,6 @@
-import Header from '../components/Header';
+const { Header } = require('../components/Header');
 
-export default class BasePage {
+class BasePage {
 	constructor(page, url, waitPageSlector = 'html') {
 		this._page = page;
 		this._url = url;
@@ -13,3 +13,5 @@ export default class BasePage {
 		await this._waitPageLocator.waitFor({ state: 'visible' });
 	}
 }
+
+module.exports = { BasePage };

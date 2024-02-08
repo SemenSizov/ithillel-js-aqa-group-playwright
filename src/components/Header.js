@@ -1,6 +1,6 @@
-import BaseComponent from './BaseComponent';
+const { BaseComponent } = require('./BaseComponent');
 
-export default class Header extends BaseComponent {
+class Header extends BaseComponent {
 	constructor(page) {
 		super(page, 'header');
 		this.signInBtn = this._container.locator('.header_signin');
@@ -17,3 +17,5 @@ export default class Header extends BaseComponent {
 	//   return this._container.locator('.-guest').isVisible();
 	// }
 }
+
+module.exports = { Header };
