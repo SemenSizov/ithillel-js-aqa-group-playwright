@@ -1,5 +1,5 @@
-const { test, expect } = require('@playwright/test');
-import WelcomePage from '../../src/pages/welcomePage/WelcomePage';
+const { test } = require('@playwright/test');
+const { WelcomePage } = require('../../src/pages/welcomePage/WelcomePage');
 
 test.describe('Evaluate', () => {
 	test.skip('could ease your life', async ({ page }) => {
