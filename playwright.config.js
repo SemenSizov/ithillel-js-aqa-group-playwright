@@ -21,7 +21,7 @@ module.exports = defineConfig({
 			username: process.env.USER_NAME || '',
 			password: process.env.USER_PASS || '',
 		},
-		trace: 'retain-on-failure',
+		trace: 'on',
 		screenshot: 'only-on-failure',
 		actionTimeout: 5_000,
 		navigationTimeout: 15_000,
@@ -70,7 +70,7 @@ module.exports = defineConfig({
 		{
 			name: 'lecture24',
 			testDir: './tests/lecture24',
-			dependencies: ['login'],
+			// dependencies: ['login'],
 		},
 	],
 });
