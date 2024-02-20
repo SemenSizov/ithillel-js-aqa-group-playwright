@@ -62,6 +62,7 @@ module.exports = defineConfig({
 		// 	testDir: './tests/lecture22',
 		// },
 		{ name: 'login', testDir: './setup', testMatch: 'login.setup.js' },
+		{ name: 'api', testDir: './setup', testMatch: 'api.setup.js' },
 		{
 			name: 'lecture23',
 			testDir: './tests/lecture23',
@@ -71,6 +72,15 @@ module.exports = defineConfig({
 			name: 'lecture24',
 			testDir: './tests/lecture24',
 			// dependencies: ['login'],
+		},
+		{
+			name: 'lecture27',
+			testDir: './tests/lecture27',
+			use: {
+				extraHTTPHeaders: { Cookie: process.env.AUTH_SID || '' },
+				// baseURL: process.env.API_URL || '',
+			},
+			dependencies: ['api'],
 		},
 	],
 });
