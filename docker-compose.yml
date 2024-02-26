@@ -1,0 +1,15 @@
+version: '1'
+services:
+  tests:
+    build:
+      context: .
+    container_name: 'pw-tests'
+    environment:
+      - USER_NAME=guest
+      - USER_PASS=welcome2qauto
+      - JOHN_EMAIL=john_doe@test.com
+      - JOHN_PASS=John_D0e
+      - HOST=https://qauto.forstudy.space/
+      - API_URL=https://qauto.forstudy.space/api=value
+    volumes:
+      - ./playwright-report:/pw-tests/playwright-report
