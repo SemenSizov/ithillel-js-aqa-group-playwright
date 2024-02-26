@@ -27,7 +27,3 @@ jobs:
         with:
           name: test-results
           path: playwright-report/
-
-      # - name: Run Playwright tests
-      #   run: |
-      #     docker-compose up --exit-code-from tests
