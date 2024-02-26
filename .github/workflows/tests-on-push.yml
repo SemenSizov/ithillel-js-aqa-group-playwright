@@ -1,0 +1,13 @@
+name: 'Playwright tests on push'
+
+on:
+  push:
+    branches:
+      - lec29-docker
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello world"
