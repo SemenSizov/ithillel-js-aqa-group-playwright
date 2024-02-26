@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
       - name: 'Run playwright tests'
         run: |
-          docker-compose up -exit-code-from tests
+          docker-compose up --exit-code-from tests
       - name: 'Upload test results'
         if: always()
         uses: actions/upload-artifact@v2
